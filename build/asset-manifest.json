@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/bipartite-graph/build/static/css/main.9391b41e.chunk.css",
-    "main.js": "/bipartite-graph/build/static/js/main.cf4d38d7.chunk.js",
-    "main.js.map": "/bipartite-graph/build/static/js/main.cf4d38d7.chunk.js.map",
+    "main.css": "/bipartite-graph/build/static/css/main.ca342561.chunk.css",
+    "main.js": "/bipartite-graph/build/static/js/main.fe541c87.chunk.js",
+    "main.js.map": "/bipartite-graph/build/static/js/main.fe541c87.chunk.js.map",
     "runtime-main.js": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js",
     "runtime-main.js.map": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js.map",
     "static/js/2.a6ac946d.chunk.js": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js",
     "static/js/2.a6ac946d.chunk.js.map": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js.map",
     "index.html": "/bipartite-graph/build/index.html",
-    "static/css/main.9391b41e.chunk.css.map": "/bipartite-graph/build/static/css/main.9391b41e.chunk.css.map",
-    "static/js/2.a6ac946d.chunk.js.LICENSE.txt": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js.LICENSE.txt"
+    "static/css/main.ca342561.chunk.css.map": "/bipartite-graph/build/static/css/main.ca342561.chunk.css.map",
+    "static/js/2.a6ac946d.chunk.js.LICENSE.txt": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js.LICENSE.txt",
+    "static/media/github.a407ddf3.svg": "/bipartite-graph/build/static/media/github.a407ddf3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a523a93e.js",
     "static/js/2.a6ac946d.chunk.js",
-    "static/css/main.9391b41e.chunk.css",
-    "static/js/main.cf4d38d7.chunk.js"
+    "static/css/main.ca342561.chunk.css",
+    "static/js/main.fe541c87.chunk.js"
   ]
 }

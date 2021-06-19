@@ -2,7 +2,15 @@ import React, { useState } from 'react';
 import { getRedBlueSubgraphs } from './red-blue';
 import { Color, ColorMap, Graph } from './types';
 import { parseRawGraph } from './parseRawGraph';
-import { Center, H1, H2, Error, BipartiteGraph, placehoderText } from './Atoms';
+import {
+  Center,
+  H1,
+  H2,
+  Error,
+  BipartiteGraph,
+  placehoderText,
+  RepoLink,
+} from './Atoms';
 import { Part } from './Part';
 import { Edges } from './Edges';
 import { ExpandingTextarea } from './ExpandingTextarea';
@@ -55,6 +63,9 @@ const RedBlueGraph = () => {
           </BipartiteGraph>
         </>
       )}
+      <RepoLink href="https://github.com/chriskr/bipartite-graph">
+        github repo
+      </RepoLink>
     </Center>
   );
 };

@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 import { Color } from './types';
+import github from './github.svg';
 
 export const Center = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  &::after {
+    content: '';
+    flex: 1;
+  }
+  min-height: 100%;
 `;
 
 export const H1 = styled.h1`
@@ -37,7 +43,7 @@ export const Textarea = styled.textarea.attrs({
   font-size: 24px;
   height: ${TEXTAREA_HEIGHT}px;
   overflow: hidden;
-  padding: ${TEXTAREA_PADDING}px 72px;
+  padding: ${TEXTAREA_PADDING}px 60px;
   resize: none;
   width: 300px;
   &:active,
@@ -88,4 +94,26 @@ export const Svg = styled.svg`
 
 export const Error = styled(H2)`
   color: red;
+`;
+
+export const RepoLink = styled.a`
+  display: block;
+  background-image: url(${github});
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 20px;
+  padding-left: 32px;
+  height: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  order: 3;
+  cursor: pointer;
+  color: inherit;
+  &::visited,
+  &:-webkit-any-link {
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 `;

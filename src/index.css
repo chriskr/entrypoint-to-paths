@@ -14,3 +14,7 @@ body {
   font-family: Roboto, sans-serif;
   color: hsl(0, 0%, 30%);
 }
+
+#root {
+  height: 100%;
+}
