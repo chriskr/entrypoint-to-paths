@@ -1,21 +1,14 @@
-export type Vertex = string;
-export type Graph = Map<Vertex, Vertex[]>;
-export type ColorMap = Map<Vertex, Color>;
+import { Graph, Vertex, ColorMap, Color } from "./types";
 
 const getConnected = (graph: Graph, vertex: Vertex): Vertex[] =>
   graph.get(vertex) || [];
-
-export enum Color {
-  RED = 1,
-  BLUE,
-}
 
 const getVerticesCount = (graph: Graph) =>
   new Set([...Array.from(graph.keys()), ...Array.from(graph.values()).flat()])
     .size;
 
 const getVisitor = (graph: Graph, colorMap: ColorMap) => {
-  const getRedBlueSubgraphsInner = (
+  const isRedBlueColorable = (
     vertex: Vertex,
     targetColor: Color = Color.BLUE
   ): boolean => {
@@ -24,13 +17,13 @@ const getVisitor = (graph: Graph, colorMap: ColorMap) => {
     colorMap.set(vertex, targetColor);
 
     return getConnected(graph, vertex).every((connectedVertex) =>
-      getRedBlueSubgraphsInner(
+      isRedBlueColorable(
         connectedVertex,
         targetColor === Color.BLUE ? Color.RED : Color.BLUE
       )
     );
   };
-  return getRedBlueSubgraphsInner;
+  return isRedBlueColorable;
 };
 
 export const getRedBlueSubgraphs = (graph: Graph) => {

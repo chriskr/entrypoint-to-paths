@@ -1,30 +1,14 @@
 import React, { useState } from 'react';
-import { Color, ColorMap, getRedBlueSubgraphs, Graph } from './red-blue';
+import { getRedBlueSubgraphs } from './red-blue';
+import { Color, ColorMap, Graph } from './types';
 import { parseRawGraph } from './parseRawGraph';
-import {
-  Center,
-  H1,
-  H2,
-  Textarea,
-  Error,
-  BiPartiteGraph,
-  NodeList,
-  Node,
-} from './Atoms';
+import { Center, H1, H2, Textarea, Error, BipartiteGraph } from './Atoms';
+import { Part } from './Part';
+import { Edges } from './Edges';
 
-const placehoderText = `node 1 - node 2 - node 3, 
+const placehoderText = `node 1 - node 2 - node 3,
 node 3 - node 4,
 node 3 - node 6`;
-
-const Part = ({ nodes, color }: { nodes: [string, Color][]; color: Color }) => (
-  <NodeList>
-    {nodes.map(([node], index) => (
-      <Node key={index} nodeColor={color}>
-        {node}
-      </Node>
-    ))}
-  </NodeList>
-);
 
 const RedBlueGraph = () => {
   const [{ graph, error, colorMap }, setState] = useState<{
@@ -33,11 +17,18 @@ const RedBlueGraph = () => {
     colorMap: ColorMap;
   }>({ graph: new Map(), error: '', colorMap: new Map() });
 
-  const redNodes = Array.from(colorMap.entries()).filter(
-    ([, color]) => color === Color.RED
-  );
-  const blueNodes = Array.from(colorMap.entries()).filter(
-    ([, color]) => color === Color.BLUE
+  const redNodes = Array.from(colorMap.entries())
+    .filter(([, color]) => color === Color.RED)
+    .map(([node]) => node);
+
+  const blueNodes = Array.from(colorMap.entries())
+    .filter(([, color]) => color === Color.BLUE)
+    .map(([node]) => node);
+
+  const redNodesSet = new Set(redNodes);
+
+  const redNodesGraph = new Map(
+    Array.from(graph).filter(([node]) => redNodesSet.has(node))
   );
 
   return (
@@ -56,18 +47,15 @@ const RedBlueGraph = () => {
       {!error && (
         <>
           <H2>bipartite graph</H2>
-          <BiPartiteGraph>
+          <BipartiteGraph>
             <Part nodes={redNodes} color={Color.RED} />
-            <NodeList>
-              {Array.from(colorMap.entries())
-                .filter(([, color]) => color === Color.BLUE)
-                .map(([node], index) => (
-                  <Node key={index} nodeColor={Color.BLUE}>
-                    {node}
-                  </Node>
-                ))}
-            </NodeList>
-          </BiPartiteGraph>
+            <Edges
+              redNodes={redNodes}
+              blueNodes={blueNodes}
+              redNodesGraph={redNodesGraph}
+            />
+            <Part nodes={blueNodes} color={Color.BLUE} />
+          </BipartiteGraph>
         </>
       )}
     </Center>

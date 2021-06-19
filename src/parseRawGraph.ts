@@ -1,4 +1,4 @@
-import { Graph } from './red-blue';
+import { Graph } from "./types";
 import zip from 'lodash/zip';
 
 const r = String.raw;
