@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/bipartite-graph/build/static/css/main.337b30da.chunk.css",
-    "main.js": "/bipartite-graph/build/static/js/main.bdd5d34d.chunk.js",
-    "main.js.map": "/bipartite-graph/build/static/js/main.bdd5d34d.chunk.js.map",
+    "main.css": "/bipartite-graph/build/static/css/main.9391b41e.chunk.css",
+    "main.js": "/bipartite-graph/build/static/js/main.cf4d38d7.chunk.js",
+    "main.js.map": "/bipartite-graph/build/static/js/main.cf4d38d7.chunk.js.map",
     "runtime-main.js": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js",
     "runtime-main.js.map": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js.map",
     "static/js/2.a6ac946d.chunk.js": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js",
     "static/js/2.a6ac946d.chunk.js.map": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js.map",
     "index.html": "/bipartite-graph/build/index.html",
-    "static/css/main.337b30da.chunk.css.map": "/bipartite-graph/build/static/css/main.337b30da.chunk.css.map",
+    "static/css/main.9391b41e.chunk.css.map": "/bipartite-graph/build/static/css/main.9391b41e.chunk.css.map",
     "static/js/2.a6ac946d.chunk.js.LICENSE.txt": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a523a93e.js",
     "static/js/2.a6ac946d.chunk.js",
-    "static/css/main.337b30da.chunk.css",
-    "static/js/main.bdd5d34d.chunk.js"
+    "static/css/main.9391b41e.chunk.css",
+    "static/js/main.cf4d38d7.chunk.js"
   ]
 }

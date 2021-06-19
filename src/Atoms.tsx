@@ -21,6 +21,9 @@ export const H2 = styled.h2`
   padding: 0;
 `;
 
+export const placehoderText = `node 1 - node 2 - node 3,
+node 3 - node 4,
+node 3 - node 6`;
 export const TEXTAREA_PADDING = 12;
 export const TEXTAREA_HEIGHT = 120;
 

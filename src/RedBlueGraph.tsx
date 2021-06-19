@@ -2,14 +2,10 @@ import React, { useState } from 'react';
 import { getRedBlueSubgraphs } from './red-blue';
 import { Color, ColorMap, Graph } from './types';
 import { parseRawGraph } from './parseRawGraph';
-import { Center, H1, H2, Error, BipartiteGraph } from './Atoms';
+import { Center, H1, H2, Error, BipartiteGraph, placehoderText } from './Atoms';
 import { Part } from './Part';
 import { Edges } from './Edges';
 import { ExpandingTextarea } from './ExpandingTextarea';
-
-const placehoderText = `node 1 - node 2 - node 3,
-node 3 - node 4,
-node 3 - node 6`;
 
 const RedBlueGraph = () => {
   const [{ graph, error, colorMap }, setState] = useState<{

@@ -3,9 +3,7 @@ body {
   height: 100%;
   box-sizing: border-box;
 }
-html {
-  /*background-color: hsl(0, 0%, 60%);*/
-}
+
 body {
   margin: 0 auto;
   width: 800px;
