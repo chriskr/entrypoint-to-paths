@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { getRedBlueSubgraphs } from './red-blue';
 import { Color, ColorMap, Graph } from './types';
 import { parseRawGraph } from './parseRawGraph';
-import { Center, H1, H2, Textarea, Error, BipartiteGraph } from './Atoms';
+import { Center, H1, H2, Error, BipartiteGraph } from './Atoms';
 import { Part } from './Part';
 import { Edges } from './Edges';
+import { ExpandingTextarea } from './ExpandingTextarea';
 
 const placehoderText = `node 1 - node 2 - node 3,
 node 3 - node 4,
@@ -35,16 +36,16 @@ const RedBlueGraph = () => {
     <Center>
       <H1>is it a red blue colorable graph?</H1>
       <H2>enter some paths</H2>
-      <Textarea
+      <ExpandingTextarea
         onChange={(event) => {
           const graph = parseRawGraph(event.target.value);
           const { error, colorMap } = getRedBlueSubgraphs(graph);
           setState({ graph, error, colorMap });
         }}
         placeholder={placehoderText}
-      ></Textarea>
+      ></ExpandingTextarea>
       {error && <Error>{error}</Error>}
-      {!error && (
+      {!error && redNodes.length > 0 && (
         <>
           <H2>bipartite graph</H2>
           <BipartiteGraph>

@@ -21,6 +21,9 @@ export const H2 = styled.h2`
   padding: 0;
 `;
 
+export const TEXTAREA_PADDING = 12;
+export const TEXTAREA_HEIGHT = 120;
+
 export const Textarea = styled.textarea.attrs({
   spellCheck: false,
 })`
@@ -29,15 +32,21 @@ export const Textarea = styled.textarea.attrs({
   border: 0px solid hsl(0, 0%, 85%);
   font: inherit;
   font-size: 24px;
-  height: 120px;
+  height: ${TEXTAREA_HEIGHT}px;
   overflow: hidden;
-  padding: 12px 72px;
+  padding: ${TEXTAREA_PADDING}px 72px;
   resize: none;
   width: 300px;
   &:active,
   &:focus {
     outline: none;
   }
+`;
+
+export const TextareaClone = styled(Textarea)`
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
 `;
 
 export const BipartiteGraph = styled.div`
@@ -63,7 +72,7 @@ export const Node = styled.li<{ nodeColor: Color }>`
   font-size: 24px;
   height: 32px;
   line-height: 32px;
-  margin: 0 0 10px 0;
+  margin: 0 0 16px 0;
   padding: 0 16px;
   text-align: center;
   position: relative;

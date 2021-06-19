@@ -2,7 +2,7 @@ import React from 'react';
 import { Graph } from './types';
 import { Svg } from './Atoms';
 
-const DELTA_HEIGHT = 42;
+const DELTA_HEIGHT = 48;
 const SVG_WIDTH = 120;
 const DELAT_CONTROL_POINT = 0.5;
 
@@ -19,6 +19,7 @@ const Path = ({
   y0: number;
   x1: number;
   y1: number;
+  key: number;
 }) => {
   const d = `M ${scaledPoint(x0, y0)} C ${scaledPoint(
     x0 + DELAT_CONTROL_POINT,
@@ -65,10 +66,10 @@ export const Edges = ({
         stroke="hsl(0, 0%, 30%)"
         strokeWidth="1"
         fill="none"
-        transform={`translate(0, ${(DELTA_HEIGHT - 10) / 2 - 0.5})`}
+        transform={`translate(0, ${(DELTA_HEIGHT - 16) / 2 - 0.5})`}
       >
-        {points.map((pointsDict) => (
-          <Path {...pointsDict} />
+        {points.map((pointsDict, index) => (
+          <Path {...pointsDict} key={index} />
         ))}
       </g>
     </Svg>
