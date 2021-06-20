@@ -7,6 +7,7 @@ export const Center = styled.div`
   align-items: center;
   background-image: linear-gradient(hsl(0, 0%, 95%), hsl(0, 0%, 75%));
   background-repeat: no-repeat;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 100%;
