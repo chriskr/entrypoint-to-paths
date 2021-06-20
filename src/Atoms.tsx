@@ -5,30 +5,33 @@ import wiking from './wiking.svg';
 
 export const Center = styled.div`
   align-items: center;
+  background-image: linear-gradient(hsl(0, 0%, 95%), hsl(0, 0%, 75%));
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  padding: 50px 0;
   &::after {
     content: '';
     flex: 1;
   }
-  min-height: 100%;
 `;
 
 export const H1 = styled.h1`
   background-image: url(${wiking});
-  background-position: 50% 24px;
+  background-position: 50% 8px;
   background-repeat: no-repeat;
   background-size: 48px;
   font: inherit;
   font-size: 48px;
-  margin: 0 0 24px 0;
-  padding: 96px 0 0 0;
+  margin: 0 0 -12px 0;
+  padding: 80px 0 0 0;
 `;
 
 export const H2 = styled.h2`
   font: inherit;
   font-size: 24px;
-  margin: 24px 0 12px 0;
+  margin: 48px 0 12px 0;
   padding: 0;
 `;
 

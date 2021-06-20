@@ -35,7 +35,13 @@ export const ExpandingTextarea = ({
     }
   };
 
-  const style = height ? { height } : {};
+  const style = height
+    ? {
+        height,
+        borderRadius: height / 2 + TEXTAREA_PADDING,
+        padding: `${TEXTAREA_PADDING}px ${(height + TEXTAREA_PADDING) / 2}px`,
+      }
+    : {};
 
   return (
     <>
