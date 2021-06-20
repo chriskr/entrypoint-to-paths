@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Color } from './types';
 import github from './github.svg';
+import wiking from './wiking.svg';
 
 export const Center = styled.div`
   align-items: center;
@@ -14,10 +15,14 @@ export const Center = styled.div`
 `;
 
 export const H1 = styled.h1`
+  background-image: url(${wiking});
+  background-position: 50% 24px;
+  background-repeat: no-repeat;
+  background-size: 48px;
   font: inherit;
   font-size: 48px;
-  margin: 72px 0 24px 0;
-  padding: 0;
+  margin: 0 0 24px 0;
+  padding: 96px 0 0 0;
 `;
 
 export const H2 = styled.h2`
