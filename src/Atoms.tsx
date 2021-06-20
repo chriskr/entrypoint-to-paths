@@ -31,19 +31,19 @@ export const placehoderText = `node 1 - node 2 - node 3,
 node 3 - node 4,
 node 3 - node 6`;
 export const TEXTAREA_PADDING = 12;
-export const TEXTAREA_HEIGHT = 120;
+export const TEXTAREA_HEIGHT = 84;
 
 export const Textarea = styled.textarea.attrs({
   spellCheck: false,
 })`
   background-color: hsl(0, 0%, 95%);
-  border-radius: 72px;
+  border-radius: ${TEXTAREA_HEIGHT / 2 + TEXTAREA_PADDING}px;
   border: 0px solid hsl(0, 0%, 85%);
   font: inherit;
   font-size: 24px;
   height: ${TEXTAREA_HEIGHT}px;
   overflow: hidden;
-  padding: ${TEXTAREA_PADDING}px 60px;
+  padding: ${TEXTAREA_PADDING}px 48px;
   resize: none;
   width: 300px;
   &:active,
