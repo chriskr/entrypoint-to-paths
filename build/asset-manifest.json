@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bipartite-graph/build/static/css/main.cb495035.chunk.css",
-    "main.js": "/bipartite-graph/build/static/js/main.42eaafdc.chunk.js",
-    "main.js.map": "/bipartite-graph/build/static/js/main.42eaafdc.chunk.js.map",
+    "main.js": "/bipartite-graph/build/static/js/main.49369ce8.chunk.js",
+    "main.js.map": "/bipartite-graph/build/static/js/main.49369ce8.chunk.js.map",
     "runtime-main.js": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js",
     "runtime-main.js.map": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js.map",
     "static/js/2.a6ac946d.chunk.js": "/bipartite-graph/build/static/js/2.a6ac946d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a523a93e.js",
     "static/js/2.a6ac946d.chunk.js",
     "static/css/main.cb495035.chunk.css",
-    "static/js/main.42eaafdc.chunk.js"
+    "static/js/main.49369ce8.chunk.js"
   ]
 }

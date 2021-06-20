@@ -59,6 +59,9 @@ export const Textarea = styled.textarea.attrs({
   &:focus {
     outline: none;
   }
+  ::placeholder {
+    color: hsl(0, 0%, 75%);
+  }
 `;
 
 export const TextareaClone = styled(Textarea)`
@@ -114,6 +117,7 @@ export const RepoLink = styled.a`
   padding-left: 32px;
   height: 24px;
   line-height: 24px;
+  margin-top: 48px;
   text-decoration: none;
   order: 3;
   cursor: pointer;
