@@ -34,10 +34,10 @@ export const getRedBlueSubgraphs = (graph: Graph) => {
   }
   const isRedBlueColorable = getVisitor(graph, colorMap)(keys[0], Color.RED);
   const isConnected = getVerticesCount(graph) === colorMap.size;
-  const error = !isConnected
-    ? 'not connected graph'
-    : !isRedBlueColorable
+  const error = !isRedBlueColorable
     ? 'is not red blue colorable'
+    : !isConnected
+    ? 'not connected graph'
     : '';
   return { error, colorMap };
 };

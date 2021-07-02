@@ -2,11 +2,14 @@ import styled from 'styled-components';
 import { Color } from './types';
 import github from './github.svg';
 import wiking from './wiking.svg';
+import logo from './logo.svg';
 
 export const Center = styled.div`
   align-items: center;
-  background-image: linear-gradient(hsl(0, 0%, 95%), hsl(0, 0%, 75%));
+  background-image: url(${logo}),
+    linear-gradient(hsl(0, 0%, 95%), hsl(0, 0%, 75%));
   background-repeat: no-repeat;
+  background-position: center center;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
