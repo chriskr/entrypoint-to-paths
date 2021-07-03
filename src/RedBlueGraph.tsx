@@ -8,7 +8,7 @@ import {
   H2,
   Error,
   BipartiteGraph,
-  placehoderText,
+  PLACEHODER_TEXT,
   RepoLink,
 } from './Atoms';
 import { Part } from './Part';
@@ -46,7 +46,7 @@ const RedBlueGraph = () => {
           const { error, colorMap } = getRedBlueSubgraphs(graph);
           setState({ graph, error, colorMap });
         }}
-        placeholder={placehoderText}
+        placeholder={PLACEHODER_TEXT}
       ></ExpandingTextarea>
       {error && <Error>{error}</Error>}
       {!error && redNodes.length > 0 && (

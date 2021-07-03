@@ -4,6 +4,7 @@ import {
   TextareaClone,
   TEXTAREA_PADDING,
   TEXTAREA_HEIGHT,
+  TextareaContainer,
 } from './Atoms';
 
 export const ExpandingTextarea = ({
@@ -13,7 +14,7 @@ export const ExpandingTextarea = ({
   onChange: React.ChangeEventHandler<HTMLTextAreaElement>;
   placeholder: string;
 }) => {
-  const [height, setHeight] = useState<number>(0);
+  const [height, setHeight] = useState<number>(TEXTAREA_HEIGHT);
   const textareaClone = useRef<HTMLTextAreaElement>(null);
 
   const onChangeInner: React.ChangeEventHandler<HTMLTextAreaElement> = (
@@ -24,33 +25,27 @@ export const ExpandingTextarea = ({
       return;
     }
     textareaClone.current.value = event.target.value;
-    const targetHeight =
-      textareaClone.current.scrollHeight - 2 * TEXTAREA_PADDING;
-    if (targetHeight > TEXTAREA_HEIGHT) {
-      if (targetHeight !== height) {
-        setHeight(targetHeight);
-      }
-    } else if (height > 0) {
-      setHeight(0);
+    const targetHeight = Math.max(
+      textareaClone.current.scrollHeight - 2 * TEXTAREA_PADDING,
+      TEXTAREA_HEIGHT
+    );
+    if (targetHeight !== height) {
+      setHeight(targetHeight);
     }
   };
-
-  const style = height
-    ? {
-        height,
-        borderRadius: height / 2 + TEXTAREA_PADDING,
-        padding: `${TEXTAREA_PADDING}px ${(height + TEXTAREA_PADDING) / 2}px`,
-      }
-    : {};
 
   return (
     <>
       <TextareaClone ref={textareaClone} />
-      <Textarea
-        onChange={onChangeInner}
-        placeholder={placeholder}
-        style={style}
-      />
+      <TextareaContainer targetHeight={height}>
+        <span>{'{'}</span>
+        <Textarea
+          onChange={onChangeInner}
+          placeholder={placeholder}
+          targetHeight={height}
+        />
+        <span>{'}'}</span>
+      </TextareaContainer>
     </>
   );
 };

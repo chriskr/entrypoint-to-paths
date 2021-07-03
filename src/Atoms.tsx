@@ -6,10 +6,10 @@ import logo from './logo.svg';
 
 export const Center = styled.div`
   align-items: center;
-  background-image: url(${logo}),
-    linear-gradient(hsl(0, 0%, 95%), hsl(0, 0%, 75%));
-  background-repeat: no-repeat;
+  background-color: rgb(248, 240, 231);
+  background-image: url(${logo});
   background-position: center center;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -28,34 +28,46 @@ export const H1 = styled.h1`
   background-size: 48px;
   font: inherit;
   font-size: 48px;
-  margin: 0 0 -12px 0;
+  margin: 0;
   padding: 80px 0 0 0;
 `;
 
 export const H2 = styled.h2`
   font: inherit;
   font-size: 24px;
-  margin: 48px 0 12px 0;
+  margin: 36px 0 24px 0;
   padding: 0;
 `;
 
-export const placehoderText = `node 1 - node 2 - node 3,
-node 3 - node 4,
-node 3 - node 6`;
+export const PLACEHODER_TEXT = `v 1 - v 2 - v 3,
+v 3 - v 4,
+v 3 - v 6`;
 export const TEXTAREA_PADDING = 12;
 export const TEXTAREA_HEIGHT = 84;
 
-export const Textarea = styled.textarea.attrs({
+export const TextareaContainer = styled.div<{ targetHeight: number }>`
+  display: flex;
+  flex-direction: row;
+  margin-top: -12px;
+  & > span {
+    font-size: ${(props) => props.targetHeight}px;
+    height: ${(props) => props.targetHeight}px;
+    line-height: ${(props) => props.targetHeight * 0.91}px;
+    padding: ${TEXTAREA_PADDING}px 0;
+  }
+`;
+
+const StyledTextarea = styled.textarea<{ targetHeight?: number }>``;
+export const Textarea = styled(StyledTextarea).attrs({
   spellCheck: false,
 })`
-  background-color: hsl(0, 0%, 95%);
-  border-radius: ${TEXTAREA_HEIGHT / 2 + TEXTAREA_PADDING}px;
+  background-color: transparent;
   border: 0px solid hsl(0, 0%, 85%);
   font: inherit;
   font-size: 24px;
-  height: ${TEXTAREA_HEIGHT}px;
+  height: ${(props) => props.targetHeight}px;
   overflow: hidden;
-  padding: ${TEXTAREA_PADDING}px 48px;
+  padding: ${TEXTAREA_PADDING}px;
   resize: none;
   width: 300px;
   &:active,
