@@ -41,7 +41,7 @@ export const H2 = styled.h2`
 
 export const PLACEHODER_TEXT = `v 1 - v 2 - v 3,
 v 3 - v 4,
-v 3 - v 6`;
+v 3 - v 5`;
 export const TEXTAREA_PADDING = 12;
 export const TEXTAREA_HEIGHT = 84;
 
@@ -74,8 +74,14 @@ export const Textarea = styled(StyledTextarea).attrs({
   &:focus {
     outline: none;
   }
-  ::placeholder {
-    color: hsl(0, 0%, 75%);
+  &::placeholder {
+    color: hsl(0, 0%, 50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  &:active::placeholder,
+  &:focus::placeholder {
+    opacity: 1;
   }
 `;
 
