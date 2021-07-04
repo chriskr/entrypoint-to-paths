@@ -27,7 +27,7 @@ export const H1 = styled.h1`
   background-repeat: no-repeat;
   background-size: 48px;
   font: inherit;
-  font-size: 48px;
+  font-size: 5vh;
   margin: 0;
   padding: 80px 0 0 0;
 `;
@@ -40,10 +40,9 @@ export const H2 = styled.h2`
 `;
 
 export const PLACEHODER_TEXT = `v 1 - v 2 - v 3,
-v 3 - v 4,
-v 3 - v 5`;
+v 3 - v 4`;
 export const TEXTAREA_PADDING = 12;
-export const TEXTAREA_HEIGHT = 84;
+export const TEXTAREA_HEIGHT = 56;
 
 export const TextareaContainer = styled.div<{ targetHeight: number }>`
   display: flex;

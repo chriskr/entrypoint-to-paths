@@ -2,7 +2,7 @@ html,
 body,
 #root {
   color: hsl(0, 0%, 30%);
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   height: 100%;
   margin: 0;
   padding: 0;
