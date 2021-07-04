@@ -28,7 +28,7 @@ export const H1 = styled.h1`
   background-repeat: no-repeat;
   background-size: 48px;
   font: inherit;
-  font-size: 5vh;
+  font-size: 5.5vh;
   margin: 0;
   padding: 80px 0 0 0;
 `;
