@@ -10,6 +10,8 @@ import {
   BipartiteGraph,
   PLACEHODER_TEXT,
   RepoLink,
+  HomeLink,
+  Navigation,
 } from './Atoms';
 import { Part } from './Part';
 import { Edges } from './Edges';
@@ -63,9 +65,12 @@ const RedBlueGraph = () => {
           </BipartiteGraph>
         </>
       )}
-      <RepoLink href="https://github.com/chriskr/bipartite-graph">
-        github repo
-      </RepoLink>
+      <Navigation>
+        <HomeLink href="https://chriskr.github.io/">home</HomeLink>
+        <RepoLink href="https://github.com/chriskr/bipartite-graph">
+          github repo
+        </RepoLink>
+      </Navigation>
     </Center>
   );
 };

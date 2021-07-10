@@ -3,6 +3,7 @@ import { Color } from './types';
 import github from './github.svg';
 import wiking from './wiking.svg';
 import logo from './logo.svg';
+import home from './home.svg';
 
 export const Center = styled.div`
   align-items: center;
@@ -129,18 +130,24 @@ export const Error = styled(H2)`
   color: red;
 `;
 
-export const RepoLink = styled.a`
-  display: block;
-  background-image: url(${github});
+export const Navigation = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+  order: 3;
+  justify-content: space-between;
+  width: 232px;
+`;
+
+export const IconLink = styled.a`
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: 20px;
   padding-left: 32px;
   height: 24px;
   line-height: 24px;
-  margin-top: 48px;
   text-decoration: none;
-  order: 3;
+
   cursor: pointer;
   color: inherit;
   &::visited,
@@ -150,4 +157,12 @@ export const RepoLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const RepoLink = styled(IconLink)`
+  background-image: url(${github});
+`;
+
+export const HomeLink = styled(IconLink)`
+  background-image: url(${home});
 `;
