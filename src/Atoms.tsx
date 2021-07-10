@@ -133,9 +133,9 @@ export const Error = styled(H2)`
 export const Navigation = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 48px;
   order: 3;
-  justify-content: space-between;
   width: 232px;
 `;
 
@@ -147,7 +147,6 @@ export const IconLink = styled.a`
   height: 24px;
   line-height: 24px;
   text-decoration: none;
-
   cursor: pointer;
   color: inherit;
   &::visited,
