@@ -1,6 +1,6 @@
-import React from 'react';
-import { Color } from './types';
-import { NodeList, Node } from './Atoms';
+import React from "react";
+import { Color } from "./types";
+import { NodeList, Node } from "./Atoms";
 
 export const Part = ({ nodes, color }: { nodes: string[]; color: Color }) => (
   <NodeList>

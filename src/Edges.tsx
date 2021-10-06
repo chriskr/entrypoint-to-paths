@@ -1,6 +1,6 @@
-import React from 'react';
-import { Graph } from './types';
-import { Svg } from './Atoms';
+import React from "react";
+import { Graph } from "./types";
+import { Svg } from "./Atoms";
 
 const DELTA_HEIGHT = 48;
 const SVG_WIDTH = 120;

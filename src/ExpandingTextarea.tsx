@@ -1,11 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 import {
   Textarea,
   TextareaClone,
   TEXTAREA_PADDING,
   TEXTAREA_HEIGHT,
   TextareaContainer,
-} from './Atoms';
+} from "./Atoms";
 
 export const ExpandingTextarea = ({
   onChange,
@@ -38,13 +38,13 @@ export const ExpandingTextarea = ({
     <>
       <TextareaClone ref={textareaClone} />
       <TextareaContainer targetHeight={height}>
-        <span>{'{'}</span>
+        <span>{"{"}</span>
         <Textarea
           onChange={onChangeInner}
           placeholder={placeholder}
           targetHeight={height}
         />
-        <span>{'}'}</span>
+        <span>{"}"}</span>
       </TextareaContainer>
     </>
   );

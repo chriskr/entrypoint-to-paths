@@ -1,4 +1,4 @@
-import { Graph, Vertex, ColorMap, Color } from './types';
+import { Graph, Vertex, ColorMap, Color } from "./types";
 
 const getConnected = (graph: Graph, vertex: Vertex): Vertex[] =>
   graph.get(vertex) || [];
@@ -30,14 +30,14 @@ export const getRedBlueSubgraphs = (graph: Graph) => {
   const keys = Array.from(graph.keys());
   const colorMap = new Map<Vertex, Color>();
   if (keys.length === 0) {
-    return { error: '', colorMap };
+    return { error: "", colorMap };
   }
   const isRedBlueColorable = getVisitor(graph, colorMap)(keys[0], Color.RED);
   const isConnected = getVerticesCount(graph) === colorMap.size;
   const error = !isRedBlueColorable
-    ? 'is not red blue colorable'
+    ? "is not red blue colorable"
     : !isConnected
-    ? 'not connected graph'
-    : '';
+    ? "not connected graph"
+    : "";
   return { error, colorMap };
 };
