@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/bipartite-graph/build/static/css/main.a20a15fc.chunk.css",
-    "main.js": "/bipartite-graph/build/static/js/main.82bf847d.chunk.js",
-    "main.js.map": "/bipartite-graph/build/static/js/main.82bf847d.chunk.js.map",
-    "runtime-main.js": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js",
-    "runtime-main.js.map": "/bipartite-graph/build/static/js/runtime-main.a523a93e.js.map",
-    "static/js/2.e0eee9a6.chunk.js": "/bipartite-graph/build/static/js/2.e0eee9a6.chunk.js",
-    "static/js/2.e0eee9a6.chunk.js.map": "/bipartite-graph/build/static/js/2.e0eee9a6.chunk.js.map",
-    "index.html": "/bipartite-graph/build/index.html",
-    "static/css/main.a20a15fc.chunk.css.map": "/bipartite-graph/build/static/css/main.a20a15fc.chunk.css.map",
-    "static/js/2.e0eee9a6.chunk.js.LICENSE.txt": "/bipartite-graph/build/static/js/2.e0eee9a6.chunk.js.LICENSE.txt",
-    "static/media/github.a407ddf3.svg": "/bipartite-graph/build/static/media/github.a407ddf3.svg",
-    "static/media/home.f04645e1.svg": "/bipartite-graph/build/static/media/home.f04645e1.svg",
-    "static/media/wiking.3ccb519e.svg": "/bipartite-graph/build/static/media/wiking.3ccb519e.svg"
+    "main.css": "/static/css/main.a20a15fc.chunk.css",
+    "main.js": "/static/js/main.24428a3a.chunk.js",
+    "main.js.map": "/static/js/main.24428a3a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3e98f239.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3e98f239.js.map",
+    "static/js/2.2e37e04e.chunk.js": "/static/js/2.2e37e04e.chunk.js",
+    "static/js/2.2e37e04e.chunk.js.map": "/static/js/2.2e37e04e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a20a15fc.chunk.css.map": "/static/css/main.a20a15fc.chunk.css.map",
+    "static/js/2.2e37e04e.chunk.js.LICENSE.txt": "/static/js/2.2e37e04e.chunk.js.LICENSE.txt",
+    "static/media/github.a407ddf3.svg": "/static/media/github.a407ddf3.svg",
+    "static/media/home.f04645e1.svg": "/static/media/home.f04645e1.svg",
+    "static/media/wiking.3ccb519e.svg": "/static/media/wiking.3ccb519e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a523a93e.js",
-    "static/js/2.e0eee9a6.chunk.js",
+    "static/js/runtime-main.3e98f239.js",
+    "static/js/2.2e37e04e.chunk.js",
     "static/css/main.a20a15fc.chunk.css",
-    "static/js/main.82bf847d.chunk.js"
+    "static/js/main.24428a3a.chunk.js"
   ]
 }
