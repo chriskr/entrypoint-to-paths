@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
-import { DataSet } from "vis-data";
-import { Network } from "vis-network";
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
+import { DataSet } from 'vis-data';
+import { Network } from 'vis-network';
 
 const GraphContainer = styled.div`
   width: 500px;
@@ -41,7 +41,7 @@ const getNodesAndEdges = (graph: Graph) => {
           return {
             id,
             label,
-            color: `hsla(${(Math.random() * 360) | 0}, 100%, 50%, .3)`,
+            color: `hsl(${(Math.random() * 360) | 0}, 100%, 85%)`,
           };
         });
 
@@ -67,7 +67,7 @@ const getNodesAndEdges = (graph: Graph) => {
           return {
             from: nodeId,
             to: linkedNodeId,
-            color: "black",
+            color: 'black',
             id: getId(),
           };
         });
@@ -108,7 +108,7 @@ const NetworkGraph = ({ graph, onNodeSelected }: NetworkGraphProps) => {
     const map = new Map(data.rawNodes.map((node) => [node.id, node]));
     const options = {
       nodes: {
-        shape: "circle",
+        shape: 'circle',
       },
       edges: {
         smooth: false,
@@ -122,7 +122,7 @@ const NetworkGraph = ({ graph, onNodeSelected }: NetworkGraphProps) => {
       },
     };
     const network = new Network(container.current!, data, options);
-    network.on("click", (e) => {
+    network.on('click', (e) => {
       const node = map.get(e.nodes[0]);
       if (node) onNodeSelected(node.label);
     });
