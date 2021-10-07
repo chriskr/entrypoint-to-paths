@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.a20a15fc.chunk.css",
-    "main.js": "/static/js/main.24428a3a.chunk.js",
-    "main.js.map": "/static/js/main.24428a3a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.3e98f239.js",
-    "runtime-main.js.map": "/static/js/runtime-main.3e98f239.js.map",
-    "static/js/2.2e37e04e.chunk.js": "/static/js/2.2e37e04e.chunk.js",
-    "static/js/2.2e37e04e.chunk.js.map": "/static/js/2.2e37e04e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a20a15fc.chunk.css.map": "/static/css/main.a20a15fc.chunk.css.map",
-    "static/js/2.2e37e04e.chunk.js.LICENSE.txt": "/static/js/2.2e37e04e.chunk.js.LICENSE.txt",
-    "static/media/github.a407ddf3.svg": "/static/media/github.a407ddf3.svg",
-    "static/media/home.f04645e1.svg": "/static/media/home.f04645e1.svg",
-    "static/media/wiking.3ccb519e.svg": "/static/media/wiking.3ccb519e.svg"
+    "main.css": "/paths-from-entry-point/build/static/css/main.a20a15fc.chunk.css",
+    "main.js": "/paths-from-entry-point/build/static/js/main.896811b0.chunk.js",
+    "main.js.map": "/paths-from-entry-point/build/static/js/main.896811b0.chunk.js.map",
+    "runtime-main.js": "/paths-from-entry-point/build/static/js/runtime-main.b563ae89.js",
+    "runtime-main.js.map": "/paths-from-entry-point/build/static/js/runtime-main.b563ae89.js.map",
+    "static/js/2.5e981e68.chunk.js": "/paths-from-entry-point/build/static/js/2.5e981e68.chunk.js",
+    "static/js/2.5e981e68.chunk.js.map": "/paths-from-entry-point/build/static/js/2.5e981e68.chunk.js.map",
+    "index.html": "/paths-from-entry-point/build/index.html",
+    "static/css/main.a20a15fc.chunk.css.map": "/paths-from-entry-point/build/static/css/main.a20a15fc.chunk.css.map",
+    "static/js/2.5e981e68.chunk.js.LICENSE.txt": "/paths-from-entry-point/build/static/js/2.5e981e68.chunk.js.LICENSE.txt",
+    "static/media/github.a407ddf3.svg": "/paths-from-entry-point/build/static/media/github.a407ddf3.svg",
+    "static/media/home.f04645e1.svg": "/paths-from-entry-point/build/static/media/home.f04645e1.svg",
+    "static/media/wiking.3ccb519e.svg": "/paths-from-entry-point/build/static/media/wiking.3ccb519e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e98f239.js",
-    "static/js/2.2e37e04e.chunk.js",
+    "static/js/runtime-main.b563ae89.js",
+    "static/js/2.5e981e68.chunk.js",
     "static/css/main.a20a15fc.chunk.css",
-    "static/js/main.24428a3a.chunk.js"
+    "static/js/main.896811b0.chunk.js"
   ]
 }
