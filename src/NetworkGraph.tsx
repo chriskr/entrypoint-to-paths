@@ -109,6 +109,10 @@ const NetworkGraph = ({ graph, onNodeSelected }: NetworkGraphProps) => {
     const options = {
       nodes: {
         shape: 'circle',
+        font: {
+          size: 20,
+          face: 'Roboto Mono',
+        },
       },
       edges: {
         smooth: false,
