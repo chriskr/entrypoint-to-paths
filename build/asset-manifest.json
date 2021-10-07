@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/paths-from-entry-point/build/static/css/main.a20a15fc.chunk.css",
-    "main.js": "/paths-from-entry-point/build/static/js/main.896811b0.chunk.js",
-    "main.js.map": "/paths-from-entry-point/build/static/js/main.896811b0.chunk.js.map",
-    "runtime-main.js": "/paths-from-entry-point/build/static/js/runtime-main.b563ae89.js",
-    "runtime-main.js.map": "/paths-from-entry-point/build/static/js/runtime-main.b563ae89.js.map",
-    "static/js/2.5e981e68.chunk.js": "/paths-from-entry-point/build/static/js/2.5e981e68.chunk.js",
-    "static/js/2.5e981e68.chunk.js.map": "/paths-from-entry-point/build/static/js/2.5e981e68.chunk.js.map",
-    "index.html": "/paths-from-entry-point/build/index.html",
-    "static/css/main.a20a15fc.chunk.css.map": "/paths-from-entry-point/build/static/css/main.a20a15fc.chunk.css.map",
-    "static/js/2.5e981e68.chunk.js.LICENSE.txt": "/paths-from-entry-point/build/static/js/2.5e981e68.chunk.js.LICENSE.txt",
-    "static/media/github.a407ddf3.svg": "/paths-from-entry-point/build/static/media/github.a407ddf3.svg",
-    "static/media/home.f04645e1.svg": "/paths-from-entry-point/build/static/media/home.f04645e1.svg",
-    "static/media/wiking.3ccb519e.svg": "/paths-from-entry-point/build/static/media/wiking.3ccb519e.svg"
+    "main.css": "/entrypoint-to-paths/build/static/css/main.a20a15fc.chunk.css",
+    "main.js": "/entrypoint-to-paths/build/static/js/main.896811b0.chunk.js",
+    "main.js.map": "/entrypoint-to-paths/build/static/js/main.896811b0.chunk.js.map",
+    "runtime-main.js": "/entrypoint-to-paths/build/static/js/runtime-main.189364fb.js",
+    "runtime-main.js.map": "/entrypoint-to-paths/build/static/js/runtime-main.189364fb.js.map",
+    "static/js/2.6ae622f1.chunk.js": "/entrypoint-to-paths/build/static/js/2.6ae622f1.chunk.js",
+    "static/js/2.6ae622f1.chunk.js.map": "/entrypoint-to-paths/build/static/js/2.6ae622f1.chunk.js.map",
+    "index.html": "/entrypoint-to-paths/build/index.html",
+    "static/css/main.a20a15fc.chunk.css.map": "/entrypoint-to-paths/build/static/css/main.a20a15fc.chunk.css.map",
+    "static/js/2.6ae622f1.chunk.js.LICENSE.txt": "/entrypoint-to-paths/build/static/js/2.6ae622f1.chunk.js.LICENSE.txt",
+    "static/media/github.a407ddf3.svg": "/entrypoint-to-paths/build/static/media/github.a407ddf3.svg",
+    "static/media/home.f04645e1.svg": "/entrypoint-to-paths/build/static/media/home.f04645e1.svg",
+    "static/media/wiking.3ccb519e.svg": "/entrypoint-to-paths/build/static/media/wiking.3ccb519e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b563ae89.js",
-    "static/js/2.5e981e68.chunk.js",
+    "static/js/runtime-main.189364fb.js",
+    "static/js/2.6ae622f1.chunk.js",
     "static/css/main.a20a15fc.chunk.css",
     "static/js/main.896811b0.chunk.js"
   ]
