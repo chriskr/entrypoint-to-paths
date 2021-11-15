@@ -1,1 +1,1 @@
-## [bipartite graph](https://chriskr.github.io/bipartite-graph/build/)
+## [entry point to paths](https://chriskr.github.io/entrypoint-to-paths/build/)
