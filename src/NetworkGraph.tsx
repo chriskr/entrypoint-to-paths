@@ -33,7 +33,7 @@ const getNodesAndEdges = (graph: Graph) => {
 
   const { nodes: rawNodes, labelMap } = Array.from(graph.entries()).reduce(
     ({ nodes, labelMap }, [node, linkedNodes]) => {
-      const newNodes = [node, ...linkedNodes]
+      const newNodes = Array.from(new Set([node, ...linkedNodes]))
         .filter((label) => !labelMap.has(label))
         .map((label) => {
           const id = getId();
